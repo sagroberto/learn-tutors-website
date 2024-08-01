@@ -1,0 +1,705 @@
+:root {
+    --vh: 1vh;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /*height: var(--vh);*/
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+    background-color: #59C6F1;
+    background-image: url('../img-learn-tutors/29.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/*---------------------------------------------*/
+/*Partes standar del la web
+/*---------------------------------------------*/
+
+main {
+    height: calc(100vh - 130px);
+    position: relative;
+    margin: 0 5%;
+}
+
+.sections{
+    width: 100%;
+    height:100%;
+    margin-top: 130px;
+    display: flex;
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+}
+
+/*---------------------------------------------*/
+/*Tamaños de las divisiones de las secciones*/
+/*---------------------------------------------*/
+
+.half-width-index,
+.half-width{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.big-width{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+/*---------------------------------------------*/
+/*Tipografía*/
+/*---------------------------------------------*/
+
+.principal-letter {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#second-title {
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#third-title {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+p{
+    font-family: "nunito";
+    font-size: large;
+    margin-bottom: 0;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/*---------------------------------------------*/
+/*Texto con fondo amarillo y letra negra*/
+/*---------------------------------------------*/
+
+.line-container1 {
+    /*display: grid;*/
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.text-line{
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 27px;
+    text-align: center;
+    position: relative;
+    background-color: #F7DE32;
+    padding:10px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/*---------------------------------------------*/
+/*Imagenes*/
+/*---------------------------------------------*/
+
+.images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+/*---------------------------------------------*/
+/*Sección inicial*/
+/*---------------------------------------------*/
+
+#image26 {
+    width: 100%;
+    height: 100%;    
+    transition: transform 0.3s;
+}
+
+#image26:hover{
+    transform: scale(1.1);
+}
+
+#image3 {
+    height: 100%;
+    width: auto;
+    bottom: 0;
+}
+
+/*---------------------------------------------*/
+/*Sección sobre nosotros*/
+/*---------------------------------------------*/
+#image4 {
+    height: 100%;
+    width: auto;
+    bottom: 0;
+}
+
+#final-about-us{
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 10%;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------*/
+/*Sección metodología*/
+/*---------------------------------------------*/
+
+#image7{
+    height: 100%;
+    width: auto;
+    bottom: 0;
+    left:0% ;
+}
+
+/*---------------------------------------------*/
+/*Sección prueba de nivel*/
+/*---------------------------------------------*/
+
+#image8{
+    height: 100%;
+    width: auto;
+    height: 100%;
+    bottom: 0;
+}
+
+/*---------------------------------------------*/
+/*Página Servicios/
+/*---------------------------------------------*/
+
+.container-cards{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 250px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-body-card{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card img{
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    border-radius: 40px;
+}
+
+.card-text{
+    width: 100%;
+    position: relative;
+}
+
+#card-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+h3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-left: #FFFFFF 7px solid;
+    border-right: #FFFFFF 7px solid;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+h3 > a{
+    text-decoration: none;
+    color: #59C6F1;
+}
+
+h3:hover{
+    transform: scale(1.2);
+}
+/*---------------------------------------------*/
+/*Sección clases personalizadas
+/*---------------------------------------------*/
+
+#image13 {
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.line-container2.lang{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*---------------------------------------------*/
+/*Sección paquetes empresariales
+/*---------------------------------------------*/
+
+#image14 {
+    width: auto;
+    height: 100%;
+    bottom: 0;
+}
+
+.line-container2 {
+    margin-top: 20px;
+}
+
+/*---------------------------------------------*/
+/*Sección traducciones
+/*---------------------------------------------*/
+
+#image15 {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+/*---------------------------------------------*/
+/*Sección exámenes
+/*---------------------------------------------*/
+
+#image44 {
+    height: 100%;
+    width: auto;
+    bottom: 0;
+}
+
+/*---------------------------------------------*/
+/*Página Enseña con nosotros/
+/*---------------------------------------------*/
+
+#image17, 
+#image18,
+#image19 {
+    width: auto;
+    height: 100%;
+    bottom: 0;
+}
+
+#curriculums{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#curriculums:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*---------------------------------------------*/
+/*Sección formulario
+/*---------------------------------------------*/
+
+#register {
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.close-form {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    left: 0;
+}
+
+.close-form:hover,
+.close-form:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#form-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+#send {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-file-upload-label {
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#file-chosen {
+    font-size: 14px;
+    color: #666;
+}
+
+#send {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"].error,
+.custom-file-upload-label.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*---------------------------------------------*/
+/*Sección de lideres 
+/*---------------------------------------------*/
+.container-leaders {
+    width: 100%;
+    height:100%;
+    display: flex;
+}
+
+.leaders{
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#image20,
+#image21{
+    height: 60%;
+}
+
+#leader1{
+    margin-top: -30px;
+    font-size: 30px;
+    border-left: 15px solid #F7DE32;
+    border-right: 15px solid #F7DE32;
+}
+
+.ceo-container{
+    position: absolute;
+    top:15%
+}
+
+.text-line.ceo{
+    color: #F7DE32;
+    background-color: #000; 
+    margin-top: -10px;
+}
+
+.principal-letter.ceo1{
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.about-leaders{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*---------------------------------------------*/
+/*Página Blog/
+/*---------------------------------------------*/
+#image6{
+    height: 100%;
+    width: auto;
+    bottom: 0;
+    right:0;
+}
+
+/*---------------------------------------------*/
+/*Página Contacto/
+/*---------------------------------------------*/
+
+.small-width{
+    width: calc(100%/3);
+    min-height: calc(100% - 100px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+
+.small-width:nth-child(2) {
+    margin-bottom: 80px;
+}
+
+#contact{
+    font-size: 30px;
+    border-left: 15px solid #F7DE32;
+    border-right: 15px solid #F7DE32;
+}
+
+.text-line.contact{
+    font-size: 20px;
+    color: #F7DE32;
+    background-color: #000; 
+    margin-top: -10px;
+}
+
+.social-image{
+    margin: 0;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-image img{
+    width: 70px;
+    transition: transform 0.3s ;
+}
+
+.social-image img:hover {
+    transform: scale(1.1);
+}
+
+#image39,
+#image43{
+    height:  100%;
+    position: relative;
+    bottom: 0;
+}
+
+#image39{
+    left: 25px;
+}
+
+/*términos y condiciones*/
+
+.site-footer {
+    height: 80px;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.politics {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.politics p {
+    color: #FFFFFF;
+    height: 30px;
+    background-color: #000;
+    border-radius: 20px;
+    border-left: 15px solid #000;
+    border-right: 15px solid #000;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.politics p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.author {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.author p {
+    color: #000;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----------*/
+
+.popup {
+    text-align: center;
+    z-index: 1000;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.popup-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-header h2{
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    left: 0;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: auto; 
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.popup-body {
+    max-height: 100vh;
+    overflow-y: auto; /* Añade barra de desplazamiento vertical */
+    padding-right: 15px;
+}
+
+#popup-privacy-policy,
+#popup-terms-conditions,
+#popup-data-treatment {
+    display: none;
+}
+

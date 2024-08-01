@@ -1,0 +1,232 @@
+/*---------------------------------------------*/
+/*Responsive del cuerpo de la web
+/*---------------------------------------------*/
+
+@media screen and (max-width: 968px) {
+    :root {
+        --vh: 1vh;
+    }
+
+    /*---------------------------------------------*/
+    /*Elementos generales/
+    /*---------------------------------------------*/
+
+    .sections {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .half-width-index {
+        width: 100%;
+        height: 50%;
+    }
+
+    .half-width {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .big-width {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .images img {
+        display: none;
+    }
+
+    #second-title {
+        font-size: 2.2em;
+        line-height: 40px;
+    }
+
+    #third-title {
+        font-size: 2.2em;
+        line-height: 40px;
+    }
+
+    .text-line {
+        font-size: 1em;
+    }
+
+    /*---------------------------------------------*/
+    /*Página inicio/
+    /*---------------------------------------------*/
+
+    #image3,
+    #image26 {
+        display: block;
+    }
+
+    #final-about-us {
+        font-size: 1.3em;
+    }
+
+    /*---------------------------------------------*/
+    /*Página Servicios/
+    /*---------------------------------------------*/
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        height: 90%;
+    }
+
+    .card {
+        min-height: 50%;
+        position: relative;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-body-card {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-card img {
+        margin-top: 30px;
+        max-width: 70%;
+        max-height: auto;
+        border-radius: 40px;
+    }
+
+    .card-text {
+        width: 100%;
+        position: relative;
+    }
+
+    .card-text p {
+        font-size: small;
+    }
+
+    #card-title {
+        font-size: 25px;
+        height: 30px;
+    }
+
+
+    h3 {
+        font-size: 15px;
+        height: 20px;
+    }
+
+    /*---------------------------------------------*/
+    /*Página enseña con nostros/
+    /*---------------------------------------------*/
+
+    #register {
+        width: 85%;
+    }
+
+    /*---------------------------------------------*/
+    /*Sección de lideres 
+    /*---------------------------------------------*/
+
+    .container-leaders {
+        flex-direction: column;
+    }
+
+    .leaders {
+        order: 2;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        position:  absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #image20,
+    #image21 {
+        height: 50%;
+    }
+
+    #leader1 {
+        margin-top: -30px;
+        font-size: 20px;
+        border-left: 15px solid #F7DE32;
+        border-right: 15px solid #F7DE32;
+    }
+
+    .ceo-container {
+        position: relative;
+    }
+
+
+    .ceo-container h1,
+    .ceo-container h2{
+        display: none;
+    }
+
+    .text-line.ceo {
+        color: #F7DE32;
+        background-color: #000;
+        margin-top: -10px;
+    }
+
+    .principal-letter.ceo1 {
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    .about-leaders {
+        padding: 0;
+    }
+
+    /*---------------------------------------------*/
+    /*Página Contacto/
+    /*---------------------------------------------*/
+
+    .small-width {
+        display: none;
+    }
+
+    .small-width:nth-child(2) {
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .social-image img {
+        margin-top: 70px;
+    }
+
+    .text-line.contact {
+        margin-top: 10px;
+    }
+
+    .politics {
+        width: 95%;
+    }
+
+    .politics p {
+        font-size: 6.5px;
+    }
+
+    .author p {
+        font-size: 9px;
+    }
+}

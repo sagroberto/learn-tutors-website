@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>learn-tutors web</title>
+  <!--normalize.min.css para eliminar diferencias de estilos entre navegadores-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/header.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/carla.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/toggle_menu.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="{{url_for('static', filename='img-learn-tutors/favicon.png')}}">
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <div class="welcome-text">
+        <h1 class="principal-letter" id="welcome-to" data-section="header" data-value="welcome-to">BIENVENIDOS A</h1>
+        <h1 class="learn">LEARN</h1>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="{{url_for ('index')}}" data-section="header" data-value="home-link">INICIO</a></li>
+              <li><a href="{{url_for ('services')}}" data-section="header" data-value="services-link">SERVICIOS</a></li>
+              <li><a href="{{url_for ('teach')}}" data-section="header" data-value="teach-link">ENSEÑA CON NOSOTROS</a></li>
+              <li><a href="{{url_for ('blog')}}">BLOG</a></li>
+              <li style="margin-right: 0px;"><a href="{{url_for ('contact')}}" data-section="header"
+                  data-value="contact-link">CONTACTO</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="flags-images">
+        <img src="{{url_for('static', filename='img-learn-tutors/32.png')}}" alt="Español" title="Español"
+          data-language="es">
+        <img src="{{url_for('static', filename='img-learn-tutors/30.png')}}" alt="Portugués" title="Portugués"
+          data-language="pt">
+        <img src="{{url_for('static', filename='img-learn-tutors/31.png')}}" alt="Inglés" title="Inglés"
+          data-language="en">
+      </div>
+
+      <!--Responsive menu-->
+      <div class="toggle-menu">
+        <span class="line1-menu"></span>
+        <span class="line2-menu"></span>
+        <span class="line3-menu"></span>
+      </div>
+
+      <div class="back-menu"></div>
+    </div>
+  </header>
+
+  {%block body%}
+
+  {%endblock%}
+
+
+</body>
+
+<script src="../static/js/vh.js" defer></script>
+<script src="../static/js/toggle_menu.js" defer></script>
+<script src="../static/js/translations.js" defer></script>
+<script src="../static/js/carla.js" defer></script>
+<script src="../static/js/cv_form.js" defer></script>
+<script src="../static/js/policys.js" defer></script>
+
+</html>

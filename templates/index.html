@@ -1,0 +1,84 @@
+{% extends './base.html' %}
+
+{% block body %}
+<main>
+  <section class="sections">
+    <div class="half-width-index">
+      <figure class="images">
+        <a href="https://wa.me/573208324078/?text=Hello! I am interested in scheduling my free 30-minute trial class"
+          target="_blank">
+          <img id="image26" src="{{url_for('static', filename='img-learn-tutors/26.png')}}" data-section="body" data-value="free-class-image" alt="Free Class">
+        </a>
+      </figure>
+    </div>
+    <div class="half-width-index">
+      <figure class="images">
+        <img id="image3" src="{{url_for('static', filename='img-learn-tutors/3.png')}}" alt="Imagen en el Centro">
+      </figure>
+    </div>
+  </section>
+
+  <section class="sections">
+    <div class="big-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="about-us-title">SOBRE NOSOTROS</h1>
+      <p data-section="body" data-value="about-us-p1">
+        En Learn Tutors, estamos para ayudarte a dominar idiomas de manera única
+        y centrada en ti. Surgimos en Colombia en 2022 para revolucionar la educación,
+        ofreciendo oportunidades laborales justas a nuestros profesores y creando
+        espacios de aprendizaje profesionales para nuestros alumnos.
+      </p>
+      <p data-section="body" data-value="about-us-p2">
+        Queremos que aprendas de forma auténtica, con expertos que te guíen y herramientas
+        innovadores que te ayuden a mejorar. Nuestra misión es crear un espacio
+        donde te sientas valorado y apoyado en tu viaje lingüístico.
+      </p>
+      <p class="principal-letter" id="final-about-us" data-section="body" data-value="about-us-p3">¡PORQUE APRENDER NUNCA FUE TAN FÁCIL!</p>
+    </div>
+
+    <figure class="images">
+      <img id="image4" src="{{url_for('static', filename='img-learn-tutors/4.png')}}" alt="Imagen en el Centro">
+    </figure>
+  </section>
+
+  <section class="sections"> 
+    <div class="big-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="methodology-title">METODOLOGÍA</h1>
+
+      <div class="line-container1">
+        <p class="text-line" data-section="body" data-value="methodology-line1">CLASES ONLINE 100% PERSONALIZADAS</p>
+        <p class="text-line" data-section="body" data-value="methodology-line2">AULAS INDIVIDUALES</p>
+        <p class="text-line" data-section="body" data-value="methodology-line3">HORARIOS ADAPTABLES</p>
+        <p class="text-line" data-section="body" data-value="methodology-line4">APLICA EL IDIOMA EN CONTEXTOS REALES</p>
+        <p class="text-line" data-section="body" data-value="methodology-line5">PRÁCTICA CONSTANTE CON TU PROFESOR</p>
+        <p class="text-line" data-section="body" data-value="methodology-line6">USA TUS HOBBIES PARA APRENDER</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image7" src="{{url_for('static', filename='img-learn-tutors/7.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+
+  <section class="sections">
+    <div class="big-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="level-test-title">PRUEBA DE NIVEL</h1>
+
+      <div class="line-container1">
+        <p class="text-line" data-section="body" data-value="level-test-line1">IDENTIFICAR ASPECTOS A MEJORAR</p>
+        <p class="text-line" data-section="body" data-value="level-test-line2">ACORDAR OBJETIVOS INICIALES</p>
+        <p class="text-line" data-section="body" data-value="level-test-line3">RESOLVER DUDAS E INQUIETUDES</p>
+        <p class="text-line" data-section="body" data-value="level-test-line4">PERSONALIZAR LAS CLASES</p>
+        <p class="text-line" data-section="body" data-value="level-test-line5">PRÁCTICA CONSTANTE CON TU PROFESOR</p>
+        <p class="text-line" data-section="body" data-value="level-test-line6">CREACIÓN DE PERFIL COMO ALUMNO</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image8" src="{{url_for('static', filename='img-learn-tutors/8.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+</main>
+
+{% include 'carla.html' %}
+
+{% endblock %}

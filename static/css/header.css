@@ -1,0 +1,163 @@
+/*---------------------------------------------*/
+/*Encabezado*/
+/*---------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+
+.container-header {
+    height: 100px;
+    margin: 30px 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------------------------------------------*/
+/*Contenerdor del texto "BIENVENIDOS A LEARN"*/
+/*---------------------------------------------*/
+
+.welcome-text {
+    position: relative;
+    color: #FFFFFF;
+}
+
+#welcome-to {
+    height: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    height: 65%;
+    font-size: 81px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------------------------*/
+/*Menú*/
+/*---------------------------------------------*/
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    bottom: 15%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+.menu nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu nav ul li {
+    list-style: none;
+}
+
+.menu nav ul li a {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu nav ul li a:hover{
+    transform: scale(1.2);
+}
+
+/*---------------------------------------------*/
+/*Contenedor del las imagenes de banderas*/
+/*---------------------------------------------*/
+
+.flags-images {
+    position: absolute;
+    right: 4.3%;
+    display: flex;
+    align-items: flex-start;
+    height: 50%;
+    transition: transform 0.3s;
+}
+
+.flags-images img {
+    width: 30px;
+    margin: 10px;
+}
+
+.flags-images img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/*---------------------------------------------*/
+/*Resposive del "Bienvenidos a Learn" y las banderas*/
+/*---------------------------------------------*/
+
+@media screen and (max-width: 968px){
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 5% 0;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learn {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+
+    .flags-images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        right: 5%;
+        text-align: center;
+        align-self: center;
+        margin-top: 2%;
+    }
+
+    .flags-images img {
+        width: 20px;
+        margin-top: 0%;
+    }
+}

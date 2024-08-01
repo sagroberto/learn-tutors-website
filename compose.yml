@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  myapp:
+    image: dockerhub_sagroberto/flask_app
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env

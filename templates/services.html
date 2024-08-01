@@ -1,0 +1,195 @@
+{% extends './base.html' %}
+
+{% block body %}
+<main>
+  <section class="sections">
+    <div class="container-cards">
+      <div class="card">
+        <div class="img-card">
+          <img src="{{url_for('static', filename='img-learn-tutors/9.png')}}" alt="imagenes de información">
+        </div>
+        <div class="container-body-card">
+          <div class="card-text">
+            <h2 class="principal-letter" id="card-title" data-section="body" data-value="card-title-1">PARTICULARES</h2>
+            <p data-section="body" data-value="card-text-1">Accede a nuestras clases
+              personalizadas y aprende a
+              tu ritmo, con paquetes
+              ajustados a tus necesidades y
+              presupuesto.</p>
+          </div>
+          <div class="card-footer">
+            <h3 class="principal-letter"><a href="#personalizados" data-section="body" data-value="card-footer-1">LEER
+                MÁS</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img src="{{url_for('static', filename='img-learn-tutors/10.png')}}" alt="imagenes de información">
+        </div>
+        <div class="container-body-card">
+          <div class="card-text">
+            <h2 class="principal-letter" id="card-title" data-section="body" data-value="card-title-2">EMPRESAS</h2>
+            <p data-section="body" data-value="card-text-2">Diseñamos paquetes adaptados a las necesidades de tu empresa
+              para capacitar
+              a tus equipos de trabajo en comunicación corporativa.
+            </p>
+          </div>
+          <div class="card-footer">
+            <h3 class="principal-letter"><a href="#empresariales" data-section="body" data-value="card-footer-2">LEER
+                MÁS</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img src="{{url_for('static', filename='img-learn-tutors/11.png')}}" alt="imagenes de información">
+        </div>
+        <div class="container-body-card">
+          <div class="card-text">
+            <h2 class="principal-letter" id="card-title" data-section="body" data-value="card-title-3">TRADUCCIONES</h2>
+            <p data-section="body" data-value="card-text-3">Te ayudamos a traducir cualquier texto que necesites,
+              ya sea para uso particular o uso corporativo.
+            </p>
+          </div>
+          <div class="card-footer">
+            <h3 class="principal-letter"><a href="#traducciones" data-section="body" data-value="card-footer-3">LEER
+                MÁS</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-card">
+          <img src="{{url_for('static', filename='img-learn-tutors/12.png')}}" alt="imagenes de información">
+        </div>
+        <div class="container-body-card">
+          <div class="card-text">
+            <h2 class="principal-letter" id="card-title" data-section="body" data-value="card-title-4">EXÁMENES</h2>
+            <p data-section="body" data-value="card-text-4">¿Necesitas certificarte? Te preparamos para el exámen
+              internacional que necesites. IELTS, TOEFL, ETC
+            </p>
+          </div>
+          <div class="card-footer">
+            <h3 class="principal-letter"><a href="#examenes" data-section="body" data-value="card-footer-4">LEER MÁS</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'carla.html' %}
+
+  <a name="personalizados" id="personalizados"></a>
+  <section class="sections">
+    <div class="big-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="custom-classes-title">CLASES
+        PERSONALIZADAS</h1>
+      <div class="line-container1">
+        <p data-section="body" data-value="custom-classes-text">
+          Todas las clases son 1-ON-1, online y cuentan con una duración de 50
+          minutos. En cada clase, se te proveerá el material, con actividades de práctica
+          para la casa, y se llevará un seguimiento de tus avances y los temas a reforzar
+          de acuerdo a tus objetivos y necesidades específicas.
+        </p>
+        <div class="line-container2 lang">
+          <p class="text-line" data-section="body" data-value="custom-classes-lang1">ESPAÑOL</p>
+          <p class="text-line" data-section="body" data-value="custom-classes-lang2">ENGLISH</p>
+          <p class="text-line" data-section="body" data-value="custom-classes-lang3">PORTUGUÊS</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image13" src="{{url_for('static', filename='img-learn-tutors/13.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+
+  <a name="empresariales" id="empresariales"></a>
+  <section class="sections">
+    <div class="half-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="business-packages-title">PAQUETES
+        EMPRESARIALES</h1>
+
+      <div class="line-container1">
+        <p data-section="body" data-value="business-packages-text">
+          Sabemos que la comunicación puede llegar a ser un factor crucial en el
+          posicionamiento de tu empresa en mercados locales e internacionales. En
+          Learn Tutors queremos escucharte y ayudarte a crear el plan ideal para que los
+          miembros de tus equipos mantengan excelentes relaciones con clientes,
+          proveedores y colegas a nivel global.
+        </p>
+        <div class="line-container2">
+          <p class="text-line" data-section="body" data-value="business-packages-line1">GENERA BUENAS RELACIONES</p>
+          <p class="text-line" data-section="body" data-value="business-packages-line2">VENDE MÁS EN MERCADOS
+            INTERNACIONALES</p>
+          <p class="text-line" data-section="body" data-value="business-packages-line3">EXPANDE TU NEGOCIO</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image14" src="{{url_for('static', filename='img-learn-tutors/14.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+
+  <a name="traducciones" id="traducciones"></a>
+  <section class="sections">
+    <div class="half-width">
+      <h1 class="principal-letter" id="second-title" data-section="body" data-value="translations-title">TRADUCCIONES
+      </h1>
+
+      <div class="line-container1">
+        <p data-section="body" data-value="translations-text1">
+          Nuestro equipo de traductores se encuentran esperando por tu solicitud, podemos
+          traducir todo lo que necesites, y el precio dependerá directamente de la cantidad de
+          palabras que necesites que trabajemos para tu proyecto.
+        </p>
+        <p data-section="body" data-value="translations-text2">
+          Toda la información que suministres será traducida cuanto antes, el tiempo que tome
+          el proyecto dependerá directamente del tamaño del mismo.
+        </p>
+        <p data-section="body" data-value="translations-text3">
+          Pregunta por nuestros precios en descuento de acuerdo a la cantidad de palabras,
+          entre más palabras tenga el documento, mayor será el descuento.
+        </p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image15" src="{{url_for('static', filename='img-learn-tutors/15.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+
+  <a name="examenes" id="examenes"></a>
+  <section class="sections">
+    <div class="big-width">
+      <h1 class="principal-letter" id="third-title" data-section="body" data-value="exam-prep-title">
+        PREPARACIÓN EXÁMENES
+        INTERNACIONALES</h1>
+
+      <div class="line-container1">
+        <p data-section="body" data-value="exam-prep-text">
+          Contamos con un equipo de expertos en preparación de exámenes internacionales.
+          Sabemos que la certificación internacional es un factor clave en el crecimiento
+          personal y profesional de las personas, así que, cuando te sientas preparado,
+          puedes confiarnos tu entrenamiento para el exámen que necesitas desarrollar.
+        </p>
+        <div class="line-container2">
+          <p class="text-line" data-section="body" data-value="exam-prep-line1">SIMULACROS DE ENTRENAMIENTO</p>
+          <p class="text-line" data-section="body" data-value="exam-prep-line2">PAQUETES PERSONALIZADOS</p>
+          <p class="text-line" data-section="body" data-value="exam-prep-line3">TIPS DE DESARROLLO</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+      <img id="image44" src="{{url_for('static', filename='img-learn-tutors/44.png')}}" alt="Imagen en el Centro">
+    </div>
+  </section>
+</main>
+
+{% endblock %}

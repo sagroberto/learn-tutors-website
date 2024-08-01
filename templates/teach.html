@@ -1,0 +1,159 @@
+{% extends './base.html' %}
+
+{% block body %}
+<main>
+    <section class="sections">
+        <div class="half-width">
+            <h1 class="principal-letter" id="second-title" data-section="body" data-value="teach-with-us">ENSEÑA CON
+                NOSOTROS</h1>
+            <div class="line-container1">
+                <p data-section="body" data-value="teach-with-us-description">
+                    Una parte fundamental de nuestra misión es brindar oportunidades laborales justas
+                    a profesionales capacitados en la enseñanza de idiomas como segunda lengua
+                    (Inglés, Español, Portugués, Francés, etc), conoce una nueva forma de enseñar, y
+                    disfruta de los beneficios de trabajar como profesor para Learn Tutors.
+                </p>
+            </div>
+            <div class="line-container2" id="curriculums">
+                <h2 class="principal-letter" id="third-title" data-section="body" data-value="we-want-to-know-you">
+                    QUEREMOS CONOCERTE</h2>
+                <p class="text-line" data-section="body" data-value="click-here">HAZ CLIC AQUÍ</p>
+            </div>
+            <dialog class="register" id="register">
+                <span class="close-form" onclick="closePopup('form')">&times;</span>
+                <label class="principal-letter" id="form-title" data-section="body"
+                    data-value="enter-your-details">INGRESA TUS DATOS</label><br>
+                <form id="myForm" action="/submit_form" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="name_lastname" placeholder="Nombres y apellidos" data-section="body"
+                        data-value="name_lastname_placeholder"><br>
+                    <input type="text" name="email" placeholder="Correo electrónico" data-section="body"
+                        data-value="email_placeholder"><br>
+                    <div class="custom-file-upload">
+                        <input type="file" id="file-upload" name="cv" accept="application/pdf" style="display:none;">
+                        <label for="file-upload" class="custom-file-upload-label">
+                            <span data-section="body" data-value="choose_file">Seleccionar archivo</span>
+                        </label>
+                        <span id="file-chosen" data-section="body" data-value="no_file_chosen">No se ha seleccionado
+                            ningún archivo</span>
+                    </div>
+                    <button id="send" type="submit" data-section="body" data-value="send">Enviar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="images">
+            <img id="image17" src="{{url_for('static', filename='img-learn-tutors/17.png')}}" alt="Imagen en el Centro">
+        </div>
+    </section>
+
+    {% include 'carla.html' %}
+
+    <section class="sections">
+        <div class="half-width">
+            <h1 class="principal-letter" id="second-title" data-section="body" data-value="benefits">BENEFICIOS</h1>
+            <div class="line-container1">
+                <p class="text-line" data-section="body" data-value="custom-schedules">HORARIOS PERSONALIZADOS</p>
+                <p class="text-line" data-section="body" data-value="remote-operation">OPERACIÓN 100% REMOTA</p>
+                <p class="text-line" data-section="body" data-value="constant-assistance">ASISTENCIA INTERNA CONSTANTE
+                </p>
+                <p class="text-line" data-section="body" data-value="monthly-payments">PAGOS MENSUALES (MES VENCIDO)</p>
+                <p class="text-line" data-section="body" data-value="access-to-materials">ACCESO MATERIAL Y PLATAFORMAS
+                </p>
+                <p class="text-line" data-section="body" data-value="flexible-methodology">METODOLOGÍA FLEXIBLE</p>
+            </div>
+        </div>
+
+        <div class="images">
+            <img id="image18" src="{{url_for('static', filename='img-learn-tutors/18.png')}}" alt="Imagen en el Centro">
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="half-width">
+            <h1 class="principal-letter" id="second-title" data-section="body" data-value="requirements">REQUISITOS</h1>
+
+            <div class="line-container1">
+                <p class="text-line" data-section="body" data-value="over-18">SER MAYOR DE 18 AÑOS</p>
+                <p class="text-line" data-section="body" data-value="perfect-language-skill">MANEJO PERFECTO DEL IDIOMA
+                </p>
+                <p class="text-line" data-section="body" data-value="whatsapp-skill">MANEJO ESTÁNDAR DE WHATSAPP</p>
+                <p class="text-line" data-section="body" data-value="internet-connection">EXCELENTE CONEXIÓN A INTERNET
+                </p>
+                <p class="text-line" data-section="body" data-value="computer-and-peripherals">COMPUTADOR Y PERIFÉRICOS
+                </p>
+                <p class="text-line" data-section="body" data-value="attitude-charisma">ACTITUD, CARISMA Y
+                    PROFESIONALISMO</p>
+            </div>
+        </div>
+
+        <div class="images">
+            <img id="image19" src="{{url_for('static', filename='img-learn-tutors/19.png')}}" alt="Imagen en el Centro">
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="container-leaders">
+            <div class="leaders">
+                <img id="image20" src="{{url_for('static', filename='img-learn-tutors/20.png')}}"
+                    alt="Imagen en el Centro">
+                <div>
+                    <p class="text-line" id="leader1" data-section="body" data-value="maria-clara-becerra">MARIA CLARA
+                        BECERRA</p>
+                    <p class="text-line ceo" data-section="body" data-value="ceo-co-founder">CEO | CO-FOUNDER</p>
+                </div>
+            </div>
+
+            <div class="big-width">
+                <div class="ceo-container">
+                    <h1 class="principal-letter ceo1" data-section="body" data-value="our-leaders">NUESTROS LÍDERES</h1>
+                    <h2 class="principal-letter ceo1" data-section="body" data-value="about-maria-clara">ACERCA DE MARÍA
+                        CLARA
+                    </h2>
+
+                    <div class="line-container1">
+                        <p class="about-leaders" data-section="body" data-value="maria-clara-description">
+                            Profesora multilingüe especializada en ELE y TESOL con más de 8 años de
+                            experiencia. Su visión impulsa a los equipos de trabajo a colaborar
+                            estrechamente con tecnologías de vanguardia y lidera la empresa para crear
+                            servicios disruptivos y competentes en el mercado global. Sus habilidades
+                            incluyen su vocación por la enseñanza, la creatividad, la ética y el
+                            profesionalismo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections">
+        <div class="container-leaders">
+            <div class="leaders">
+                <img id="image21" src="{{url_for('static', filename='img-learn-tutors/21.png')}}"
+                    alt="Imagen en el Centro">
+                <div>
+                    <p class="text-line" id="leader1" data-section="body" data-value="shaker-ahmad-cortes">SHAKER AHMAD
+                        CORTES</p>
+                    <p class="text-line ceo" data-section="body" data-value="gm-co-founder">GM | CO-FOUNDER</p>
+                </div>
+            </div>
+
+            <div class="big-width">
+                <div class="ceo-container">
+                    <h1 class="principal-letter ceo1" data-section="body" data-value="our-leaders">NUESTROS LÍDERES</h1>
+                    <h2 class="principal-letter ceo1" data-section="body" data-value="about-shaker-ahmad">ACERCA DE
+                        SHAKER AHMAD</h2>
+
+                    <div class="line-container1">
+                        <p class="about-leaders" data-section="body" data-value="shaker-ahmad-description">
+                            Administrador de empresas con más de 10 años de experiencia en las industrias
+                            creativas y de servicio al cliente. Tiene más de 5 años de experiencia como
+                            profesor de TESOL y ELE, y sus habilidades incluyen su visión internacional,
+                            creación de modelos ágiles y habilidades de negociación.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
