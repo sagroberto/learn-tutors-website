@@ -32,6 +32,10 @@ def teach():
 def blog():
     return render_template('blog.html')
 
+@app.route('/blogs/<entry_name>')
+def blog_entry(entry_name):
+    return render_template(f'blogs/{entry_name}.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')

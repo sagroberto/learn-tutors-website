@@ -5,7 +5,7 @@ const imgToChange = document.querySelector('#image26');
 const changeLanguages = async (language) => {
     // Agrega un parámetro de caché para evitar que el navegador use la versión en caché
     const cacheBuster = new Date().getTime();
-    const requestJson = await fetch(`./languages/${language}.json?cache=${cacheBuster}`);
+    const requestJson = await fetch(`/languages/${language}.json?cache=${cacheBuster}`);
     const texts = await requestJson.json();
 
     for (const textToChange of textsToChange) {

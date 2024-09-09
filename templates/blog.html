@@ -3,14 +3,45 @@
 {%block body%}
 <main>
   <section class="sections">
-    <div class="images">
-      <img id="image6" src="{{url_for('static', filename='img-learn-tutors/6.png')}}" alt="Imagen en el Centro">
-    </div>
+    <div class="container-cards">
+      <div class="card-blog">
+        <div class="image-card-blog">
+          <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_1')}}"></a>
+            <img class="front" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog.png')}}"
+              alt="imagenes de información">
+            <img class="back" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog-entry-1.png')}}"
+              alt="imagenes de información">
+        </div>
+      </div>
 
-    <div class="big-width">
-      <div class="line-container3">
-        <p class="principal-letter" id="second-title" data-section="body" data-value="blog-renewal">ESTAMOS RENOVANDO NUESTRO BLOG.
-        </p>
+      <div class="card-blog">
+        <div class="image-card-blog">
+          <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_2')}}"></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/lifelong-learners-blog.png')}}"
+            alt="imagenes de información">
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/ted-talk-blog.png')}}"
+            alt="imagenes de información">
+        </div>
+      </div>
+
+      <div class="card-blog">
+        <div class="image-card-blog">
+          <a class="flip-card" href=""></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog.png')}}"
+            alt="imagenes de información">
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog.png')}}"
+            alt="imagenes de información">
+        </div>
+      </div>
+
+      <div class="card-blog">
+        <div class="image-card-blog">
+          <a class="flip-card" href=""></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/lifelong-learners-blog.png')}}"
+            alt="imagenes de información">
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/lifelong-learners-blog.png')}}"
+            alt="imagenes de información">
+        </div>
       </div>
     </div>
   </section>

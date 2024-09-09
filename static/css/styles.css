@@ -226,6 +226,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    perspective: 1000px;
 }
 
 .container-body-card{
@@ -236,7 +237,7 @@ p{
     justify-content: center;
 }
 
-.img-card img{
+.image-card img{
     margin-top: 30px;
     max-width: 100%;
     max-height: 100%;
@@ -523,13 +524,75 @@ input[type="text"].error,
 /*---------------------------------------------*/
 /*Página Blog/
 /*---------------------------------------------*/
-#image6{
-    height: 100%;
-    width: auto;
-    bottom: 0;
-    right:0;
+.card-blog{
+    max-width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.card-blog img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    border-radius: 40px;
+}
+
+.image-card-blog{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.image-card-blog:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.image-card-blog img{
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    border-radius: 40px;
+    position: static;
+    backface-visibility: hidden;
+}
+
+.image-card-blog .back{
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.flip-card{
+    z-index: 10;
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+.container-entry{
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 40px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.entry img{
+    transform: scale(1.4);
+}
+
+.container-entry > #second-title{
+    color: #000;
+    font-size: 40px;    
+}
 /*---------------------------------------------*/
 /*Página Contacto/
 /*---------------------------------------------*/
@@ -590,7 +653,9 @@ input[type="text"].error,
     left: 25px;
 }
 
-/*términos y condiciones*/
+/*---------------------------------------------*/
+/*Terminos y condiciones/
+/*---------------------------------------------*/
 
 .site-footer {
     height: 80px;
