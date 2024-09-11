@@ -28,7 +28,7 @@ services:
 
   myapp:
     container_name: myapp
-    image: registry-1.docker.io/sagroberto/flask_app
+    image: sagroberto/flask_app:latest
     expose:
       - "5000"
     env_file:
