@@ -17,8 +17,8 @@ COPY . /app/
 EXPOSE 5000
 
 # Definir variables de entorno para evitar archivos .pyc y habilitar la salida sin buffer
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Comando para iniciar el servidor
 CMD ["python", "index.py"]
