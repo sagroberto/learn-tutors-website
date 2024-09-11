@@ -1,9 +1,45 @@
-version: '3.8'
+version: '3'
 
 services:
-  myapp:
-    image: dockerhub_sagroberto/flask_app
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx_proxy
+    restart: always
     ports:
-      - "5000:5000"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:rw
+      - vhostd:/etc/nginx/vhost.d:rw
+      - html:/usr/share/nginx/html:rw
+    labels:
+      - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
+
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    restart: always
+    environment:
+      - NGINX_PROXY_CONTAINER=nginx-proxy
+    volumes:
+      - certs:/etc/nginx/certs:rw
+      - vhostd:/etc/nginx/vhost.d:rw
+      - html:/usr/share/nginx/html:rw
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  myapp:
+    container_name: myapp
+    image: registry-1.docker.io/sagroberto/flask_app
+    expose:
+      - "5000"
     env_file:
       - .env
+    restart: always
+
+
+volumes:
+  certs:
+  html:
+  vhostd:
+  letsencrypt-acme:
