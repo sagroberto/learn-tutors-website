@@ -56,7 +56,7 @@ def submit_form():
             try:
                 # Crear el mensaje de correo al destinatario fijo (RRHH)
                 msg_to_rrhh = Message("Nuevo CV recibido",
-                                      recipients=["sdgualteros@gmail.com"])
+                                      recipients=["info@learn-tutors.com"])
                 msg_to_rrhh.body = f"Se ha recibido un nuevo CV de {name_lastname} ({email})."
                 msg_to_rrhh.attach(cv_file.filename, "application/pdf", cv_file.read())
                 mail.send(msg_to_rrhh)
@@ -64,7 +64,7 @@ def submit_form():
                 # Correo de confirmación al remitente (aplicante)
                 msg_to_applicant = Message("Confirmation of application receipt.",
                                            recipients=[email])  # Email del aplicante
-                msg_to_applicant.body = f"Hi! {name_lastname},\n\nThank you for submitting your application. We have received your CV and will contact you soon.\n\nBest regards,,\nLearnTutors Team"
+                msg_to_applicant.body = f"Hi! {name_lastname},\n\nThank you for submitting your application. We have received your CV and will contact you soon.\n\nBest regards,\nLearnTutors Team"
                 mail.send(msg_to_applicant)
 
                 return render_template('teach.html', message="CV enviado con éxito")
