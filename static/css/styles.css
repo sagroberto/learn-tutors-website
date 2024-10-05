@@ -103,12 +103,21 @@ p{
     hyphens: auto;
 }
 
+li, h4{
+    font-family: "nunito";
+    font-size: large;
+    margin-bottom: 0;
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 10px;    
+}
+
 /*---------------------------------------------*/
 /*Texto con fondo amarillo y letra negra*/
 /*---------------------------------------------*/
 
 .line-container1 {
-    /*display: grid;*/
+    
     text-align: center;
     height: auto;
     width: 100%;
@@ -524,7 +533,16 @@ input[type="text"].error,
 /*---------------------------------------------*/
 /*Página Blog/
 /*---------------------------------------------*/
+
+.container-blogs{
+    overflow-y: scroll;
+    align-items: center;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 .card-blog{
+    margin-top: 3em;
     max-width: 250px;
     height: 250px;
     position: relative;
@@ -576,10 +594,15 @@ input[type="text"].error,
     height: 250px;
 }
 
+/*---------------------------------------------*/
+/*Entradas de blogs*/
+/*---------------------------------------------*/
+
 .container-entry{
     margin-bottom: 20px;
     padding: 25px;
-    background-color: #fff;
+    background-color: #f4f6f6;
+    opacity: 0.8;
     border-radius: 40px;
     height: 100%;
     overflow-y: scroll;

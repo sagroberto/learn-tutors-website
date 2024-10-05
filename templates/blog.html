@@ -3,7 +3,7 @@
 {%block body%}
 <main>
   <section class="sections">
-    <div class="container-cards">
+    <div class="container-cards container-blogs">
       <div class="card-blog">
         <div class="image-card-blog">
           <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_1')}}"></a>
@@ -26,23 +26,34 @@
 
       <div class="card-blog">
         <div class="image-card-blog">
-          <a class="flip-card" href=""></a>
-          <img class="front" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog.png')}}"
+          <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_3')}}"></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/Harnessing-the-Power-of-Customer-Feedback-BLOG.png')}}"
             alt="imagenes de información">
-          <img class="back" src="{{url_for('static', filename='img-learn-tutors/multiplayer-blog.png')}}"
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/Harnessing-the-Power-of-Customer-Feedback-BLOG-PT2.png')}}"
             alt="imagenes de información">
         </div>
       </div>
 
       <div class="card-blog">
         <div class="image-card-blog">
-          <a class="flip-card" href=""></a>
-          <img class="front" src="{{url_for('static', filename='img-learn-tutors/lifelong-learners-blog.png')}}"
+          <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_4')}}"></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/Os-tropeços-da(s)-língua(s)-BLOG-PT1.png')}}"
             alt="imagenes de información">
-          <img class="back" src="{{url_for('static', filename='img-learn-tutors/lifelong-learners-blog.png')}}"
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/Os-tropeços-da(s)-língua(s)-BLOG-PT2.png')}}"
             alt="imagenes de información">
         </div>
       </div>
+
+      <div class="card-blog">
+        <div class="image-card-blog">
+          <a class="flip-card" href="{{url_for('blog_entry', entry_name='blog_entry_5')}}"></a>
+          <img class="front" src="{{url_for('static', filename='img-learn-tutors/Quem-somos-para-o-mundo-BLOG-PT1.png')}}"
+            alt="imagenes de información">
+          <img class="back" src="{{url_for('static', filename='img-learn-tutors/Quem-somos-para-o-mundo-BLOG-PT2.png')}}"
+            alt="imagenes de información">
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
